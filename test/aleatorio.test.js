@@ -14,4 +14,12 @@ describe("Aleatorio", () => {
   test("tests the start of the range equals the end of the range", () => {
     expect(aleatorio.gerarNumeroAleatorio(3, 3)).toBe(-1);
   });
+
+  test("test a valid range", () => {
+    expect(aleatorio.gerarNumeroAleatorio(200, 3000)).toBeGreaterThanOrEqual(
+      200
+    );
+
+    expect(aleatorio.gerarNumeroAleatorio(200, 3000)).toBeLessThanOrEqual(3000);
+  });
 });
