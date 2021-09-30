@@ -10,4 +10,8 @@ describe("Aleatorio", () => {
   test("test the end of the range is a negative value", () => {
     expect(aleatorio.gerarNumeroAleatorio(4, -2)).toBe(-1);
   });
+
+  test("tests the start of the range equals the end of the range", () => {
+    expect(aleatorio.gerarNumeroAleatorio(3, 3)).toBe(-1);
+  });
 });
