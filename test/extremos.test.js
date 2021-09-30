@@ -20,4 +20,10 @@ describe("Extremos", () => {
       indiceMaior: 1,
     });
   });
+
+  test("test empty array", () => {
+    expect(() => {
+      extremos.acharExtremos([]);
+    }).toThrow("vetor com zero elementos");
+  });
 });
