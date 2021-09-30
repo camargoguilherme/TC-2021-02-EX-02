@@ -26,4 +26,10 @@ describe("Extremos", () => {
       extremos.acharExtremos([]);
     }).toThrow("vetor com zero elementos");
   });
+
+  test("test null array", () => {
+    expect(() => {
+      extremos.acharExtremos(null);
+    }).toThrow("vetor nao pode ser nulo");
+  });
 });
