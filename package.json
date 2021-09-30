@@ -1,0 +1,14 @@
+{
+  "name": "atividade-2",
+  "version": "1.0.0",
+  "description": "Atividade 2 - testes no Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Guilher Camargo",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^27.2.4"
+  }
+}
